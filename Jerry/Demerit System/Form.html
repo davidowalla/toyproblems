@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demerit Points Calculator</title>
+
+  <!-- Referencing external css file-->
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <form id="speedForm">
+
+   <div class="image"> 
+    <img src="Speed/speeding-car-with-speedometer-showing-high-speed-vector-28285851.jpg" alt="speeding car">
+    </div>
+  <h1>SPEEDING POINTS CALCULATOR</h1>
+
+  <div class="form">
+  <label for="speedInput">ENTER CAR SPEED:</label>
+  <input type="number" id="speedInput" min="0" placeholder="Enter speed in km/h">
+  </div>
+  
+  <div class="btns">
+  <button type="button" onclick="calculateDemeritPoints()">Calculate Points</button>
+  <button type="button" onclick="resetForm()">Reset Calculator</button>
+  </div>
+
+    
+  <div class="output">
+    <label for="Output">RESULT:</label>
+    <p id="result"></p>
+  </div>
+  </div>
+
+  </form> 
+
+
+</body>
+</html>

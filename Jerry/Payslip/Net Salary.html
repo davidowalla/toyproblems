@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenya Net Salary Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+    <img src="Salary/compensation-vs-salary.jpg" alt="salary" style="float: right; margin: right 20px;">
+    
+</head>
+<body>
+
+  <h1>NET SALARY CALCULATOR</h1>
+
+  
+  <label for="grossPay">Enter Basic Pay (KES):</label>
+  <input type="text" id="grossPay" oninput="formatInput(this)" placeholder="Enter Basic Pay" required>
+
+  <button onclick="calculateNetPay()">CALCULATE NET PAY</button>
+
+  <div>
+  <table>
+    <tr>
+      <th></th>
+      <th>AMOUNT (KES)</th>
+    </tr>
+    <tr>
+      <td>Basic PAY:</td>
+      <td id="grossPayResult"></td>
+    </tr>
+    <tr>
+      <td>NSSF:</td>
+      <td id="nssfDeductionResult"></td>
+    </tr>
+    <tr>
+      <td class="taxablepay">TAXABLE PAY:</td>
+      <td id="taxablePayResult"></td>
+    </tr>
+    <tr>
+      <td>INCOME TAX:</td>
+      <td id="payeResult"></td>
+    </tr>
+    <tr>
+      <td>Insurance (NHIF) Relief:</td>
+      <td id="InsuranceRelief"></td>
+    </tr>
+    <tr>
+      <td>Personal Relief:</td>
+      <td id="personalRelief"></td>
+    </tr>
+    <tr>
+      <td>P.A.Y.E:</td>
+      <td id="paye"></td>
+    </tr>
+    <tr>
+      <td class="payafter">Pay After Tax:</td>
+      <td id="payeAfterTax"></td>
+    </tr>
+    <tr>
+      <td>NHIF:</td>
+      <td id="nhifResult"></td>
+    </tr>
+    <tr>
+      <td>Housing Levy:</td>
+      <td id="housingLevyResult"></td>
+    </tr>
+    <tr>
+      <td class="net">NET PAY:</td>
+      <td id="netPayResult"></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
